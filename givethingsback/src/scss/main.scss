@@ -49,16 +49,14 @@ nav {
   }
 }
 .start {
-
   opacity: 1;
   height: 100vh;
   display: flex;
-  .start-image{
-    background: url('../assets/HeroImage.png') no-repeat padding-box ;
+  .start-image {
+    background: url("../assets/HeroImage.png") no-repeat padding-box;
     background-position: 100%;
     background-size: cover;
     width: 45%;
-
   }
   .start-pane {
     display: flex;
@@ -71,7 +69,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height:100%;
+    height: 100%;
     width: 80%;
     margin: 2em 2em;
     img {
@@ -81,32 +79,112 @@ nav {
       display: flex;
       justify-content: space-around;
       li {
-        padding: 1em 2em;
         border: 0.75px solid $menuColor;
         a {
           text-decoration: none;
           color: $menuColor;
-          
         }
       }
     }
     .start-pane-title {
       font-size: $font-size-38;
+      letter-spacing: -0.76px;
     }
   }
+}
+.whatDoWeDo {
+  display: flex;
+  flex-direction: column;
 }
 .home-three-columns {
   display: flex;
   padding: 4em 2em;
-  background: url('../assets/3\ Columns\ Background.png');
+  background: url("../assets/3\ Columns\ Background.png");
+
   .number {
-    font-weight: 300;
+    font-weight: 100;
     font-size: $font-size-90;
   }
   .title {
+    padding: 2em 3em;
     font-size: $font-size-18;
   }
   .content {
     font-size: $font-size-16;
+  }
+}
+.four-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .four-steps-header {
+    p {
+      font-size: $font-size-38;
+      text-align: center;
+      letter-spacing: -0.76px;
+      color: $menuColor;
+      opacity: 1;
+      margin-bottom: 25px;
+      margin-top: 55px;
+    }
+    img {
+      margin-bottom: 40px;
+    }
+  }
+  .four-steps-content {
+    width: 100%;
+    justify-content: center;
+    background-color: $fourStepsBackground;
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 2em;
+      li {
+        max-width: 200px;
+      }
+      p {
+        &.title {
+          font-size: $font-size-18;
+        }
+        &.content {
+          font-size: $font-size-16;
+        }
+        margin: 0.75em;
+      }
+    }
+  }
+  .four-steps-bottom {
+    ul {
+      margin: 3rem;
+    }
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 310px;
+  border: 0.75px solid $menuColor;
+  a {
+    text-decoration: none;
+    color: $menuColor;
+    font-size: $font-size-36;
+  }
+}
+.about-us {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  .left-pane  {
+    display: flex;
+    width: 50%;
+  }
+  .right-pane {
+    height:100%;
+    width: 50%;
+    background: url('../assets/People.png');
+    background-size: cover;
   }
 }

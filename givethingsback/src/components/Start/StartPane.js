@@ -9,11 +9,11 @@ class StartPane extends React.Component {
                 <div className="start-pane-content">
                     <h1 className="start-pane-title">Zacznij pomagać! <br />Oddaj niechciane rzeczy w zaufane ręce</h1>
                     <img src={logo} />
-                    <ul>
-                        <li>
+                    <ul >
+                        <li className="btn">
                             <Link to="/logowanie">ODDAJ RZECZY</Link>
                         </li>
-                        <li>
+                        <li className="btn">
                             <Link to="/logowanie">ZORGANIZUJ ZBIÓRKĘ</Link>
                         </li>
                     </ul>
