@@ -1,0 +1,112 @@
+@import "./reset.css";
+@import "./settings/fonts";
+@import "./settings/colors";
+body {
+  font-family: $font-base;
+}
+
+nav {
+  margin: 1.5em 1em;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li {
+      padding: 0.75em 2em;
+      text-align: right;
+      letter-spacing: 0;
+      color: #737373;
+      opacity: 1;
+      a {
+        text-align: left;
+        letter-spacing: 0;
+        color: #3c3c3c;
+        opacity: 1;
+        font-size: $font-size-14;
+      }
+    }
+  }
+}
+.login-panel ul {
+  li a {
+    color: $loginPanelColor;
+    text-decoration: none;
+  }
+  .sign-up {
+    border: 0.75px solid #fad648;
+    a {
+      font-size: $font-size-13;
+    }
+  }
+}
+.home-header ul li {
+  &:first-of-type {
+    border: 0.75px solid #3c3c3c;
+  }
+  a {
+    font-size: $font-size-18;
+    color: $menuColor;
+  }
+}
+.start {
+
+  opacity: 1;
+  height: 100vh;
+  display: flex;
+  .start-image{
+    background: url('../assets/HeroImage.png') no-repeat padding-box ;
+    background-position: 100%;
+    background-size: cover;
+    width: 45%;
+
+  }
+  .start-pane {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .start-pane-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height:100%;
+    width: 80%;
+    margin: 2em 2em;
+    img {
+      margin: 2em;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        padding: 1em 2em;
+        border: 0.75px solid $menuColor;
+        a {
+          text-decoration: none;
+          color: $menuColor;
+          
+        }
+      }
+    }
+    .start-pane-title {
+      font-size: $font-size-38;
+    }
+  }
+}
+.home-three-columns {
+  display: flex;
+  padding: 4em 2em;
+  background: url('../assets/3\ Columns\ Background.png');
+  .number {
+    font-weight: 300;
+    font-size: $font-size-90;
+  }
+  .title {
+    font-size: $font-size-18;
+  }
+  .content {
+    font-size: $font-size-16;
+  }
+}
