@@ -1,0 +1,32 @@
+{
+    "foundations": [
+    {
+        "name": "Fundacja \"Dbam o Zdrowie\"",
+        "desc": "test1",
+        "tags": [
+            "ubrania",
+            "jedzenie",
+            "sprzęt AGD",
+            "meble", 
+            "zabawki"
+        ]
+    },
+    {
+        "name": "Fundacja \"Dla dzieci\"",
+        "desc": "test2",
+        "items": ["ubrania",
+        "meble",
+        "zabawki"]
+    },
+    {
+        "name": "Fundacja \"Dla dzieci\"",
+        "desc": "test2",
+        "items": [
+            "ubrania",
+            "meble",
+            "zabawki"
+        ]
+    }
+    
+    ]
+}

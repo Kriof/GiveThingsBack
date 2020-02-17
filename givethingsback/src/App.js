@@ -1,33 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {
-  Link,
-  Switch,
-  Route,
-  BrowserRouter as Router
-} from 'react-router-dom';
-import Home from './components/Home';
-import LogIn from './components/LogIn';
-import SignUp from './components/SignUp';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import Home from "./components/Home";
+import LogIn from "./components/LogIn";
+import SignUp from "./components/SignUp";
+import { Provider } from "react-redux";
+import store from "./components/Store";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <div>
-          <Switch>
-            <Route path="/logowanie">
-              <LogIn />
-            </Route>
-            <Route path="/rejestracja">
-              <SignUp />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <div>
+            <Switch>
+              <Route path="/logowanie">
+                <LogIn />
+              </Route>
+              <Route path="/rejestracja">
+                <SignUp />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </Provider>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

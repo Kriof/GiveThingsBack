@@ -70,7 +70,7 @@ class HomeHeader extends React.Component {
                             <Link to="aboutUs">O nas</Link>
                         </li>
                         <li>
-                            <Link to="foundationAndOrganisations">Fundacja i organizacje</Link>
+                            <Link to="whoWeHelp">Fundacja i organizacje</Link>
                         </li>
                         <li>
                             <Link to="contact">Kontakt</Link>

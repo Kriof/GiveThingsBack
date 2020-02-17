@@ -1,0 +1,9 @@
+const constants = {
+    LOCAL_CHARITY: "LOCAL_CHARITY",
+    EXTERNAL_COMPANIES: "EXTERNAL_COMPANIES",
+    FOUNDATIONS: "FOUNDATIONS",
+    CHANGE_PAGE: "CHANGE_PAGE",
+
+};
+
+export default constants; 

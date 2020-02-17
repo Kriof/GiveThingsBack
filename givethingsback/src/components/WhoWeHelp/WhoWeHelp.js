@@ -2,21 +2,24 @@ import React from 'react';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import logo from '../../assets/Decoration.svg';
 import signature from '../../assets/Signature.svg';
-const AboutUs = () => {
+
+const WhoWeHelp = (props) => {
     return (
         <>
-            <Element name="aboutUs" className="about-us">
-                <div className="left-pane">
-                    <h1>O nas</h1>
+            <Element name="whoWeHelp" className="who-we-help">
+                <div className="pane">
+                    <h1>Komu pomagamy?</h1>
                     <img src={logo} />
+                    <ul>
+                        <li><span></span></li>
+                    </ul>
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-                    <img src={signature} />
+                    {props.foundations}
+                    <h4>Page id: {props.fundations.currentPageId}</h4>
                 </div>
-                <div className="right-pane"></div>
-
             </Element>
         </>
     )
 }
 
-export default AboutUs;
+export default WhoWeHelp;
